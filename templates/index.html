@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page with Sign In</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('your-static-image.jpg'); /* Replace 'your-static-image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white; /* Text color on top of the image */
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to improve text visibility */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .bn3637 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        backface-visibility: hidden;
+        border: 0.3rem solid transparent;
+        border-radius: 3rem;
+        }
+
+        .bn36 {
+        border-color: #fff;
+        transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+        }
+
+        .bn36:hover {
+        transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>This is the home page for our website.</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button class="bn3637" type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
